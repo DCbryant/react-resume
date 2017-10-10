@@ -5,7 +5,7 @@ import WorkGallery from './WorkGallery'
 import Skill from './Skill'
 import Contact from './Contact'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Link,
 } from 'react-router-dom'
