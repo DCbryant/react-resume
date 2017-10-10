@@ -5,9 +5,9 @@ import WorkGallery from './WorkGallery'
 import Skill from './Skill'
 import Contact from './Contact'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
-  Link
+  Link,
 } from 'react-router-dom'
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
       name:'dcbryant'
     }
   }
-  
+
   render() {
     return (
       <div className="App">       
@@ -27,6 +27,7 @@ class App extends Component {
                     <img className="avater" src="https://i.loli.net/2017/10/08/59da09d347561.jpg" alt="avater" />
                     <div className="name">{this.state.name}</div>
                     <ul className="nav">
+                      
                       <li><Link to="/">个人</Link></li>
                       <li><Link to="/works">作品</Link></li>
                       <li><Link to="/skill">技能</Link></li>
@@ -42,7 +43,7 @@ class App extends Component {
                   <div className="copyright">&copy; dcbryant 2017</div>
                   </div>            
                 <div className="content"> 
-                  <Route exact path="/" component={SelfIntro}/>
+                  {<Route exact path="/" component={SelfIntro}/>}
                   <Route path="/works" component={WorkGallery}/>
                   <Route path="/skill" component={Skill}/>
                   <Route path="/contact" component={Contact}/>
