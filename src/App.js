@@ -46,7 +46,7 @@ class App extends Component {
                   <Route exact path="/" component={SelfIntro}/>
                   <Route path="/works" component={WorkGallery}/>
                   <Route path="/skill" component={Skill}/>
-                  <Route path="/contact" component={Contact}/>
+                  <Route path="/contact" component={Contact}/> 
                 </div>
             </div>
           </Router>
