@@ -51,7 +51,7 @@ export default class WorkGallery extends Component{
                             <p>使用技能：面向对象 js jquery</p> 
                         </div> 
                     </a></li>
-                    <li><a href="">
+                    <li><a href="https://dcbryant.github.io/react-resume/build/">
                         <img src="https://i.loli.net/2017/10/10/59dc64fa60b13.png" />
                         <div className="item-wrapper">
                             <h3>react-resume</h3>

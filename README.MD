@@ -4,4 +4,4 @@
 
 使用技能：react react-router react-echarts
 
-预览链接：http://DCbryant.github.io/react-resume/build
+预览链接：http://DCbryant.github.io/react-resume/build/
