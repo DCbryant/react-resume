@@ -1,0 +1,348 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight:normal;
+}
+
+*::before{
+  box-sizing: border-box;
+}
+
+*::after{
+  box-sizing: border-box;
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.contentBox{
+  display: flex;
+}
+
+.sidebar{
+  min-width: 20vw;
+  min-height: 100vh;
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .avater{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+.sidebar .name{
+  font-size: 32px;
+  color: #fff;
+}
+
+.nav li {
+  font-size: 18px;
+  line-height: 2;
+  padding: 6px 0;
+}
+
+.nav li a{
+  color: #fff;
+}
+
+.nav li a:hover{
+  color: salmon;
+}
+
+.sidebar .links{
+  margin-top: 20px;
+}
+
+.links .link:nth-child(1){
+  margin-right: 10px;
+  display: inline-block; 
+}
+
+.links img{
+  width: 40px;
+  height: 40px;
+}
+
+.source a{
+  color: salmon;
+}
+
+.source,.copyright{
+  margin-top: 16px;
+  color: #fff;
+}
+
+
+.self-intro{
+  height: 100vh;
+  padding-left: 50px;
+  padding-top: 40px;
+  color: #fff;
+  font-size: 18px;
+  background: transparent url(https://i.loli.net/2017/10/10/59dc3b4bc2273.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.self-intro h1{
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.self-intro p{
+  line-height: 1.5;
+}
+
+.self-intro .self-assessment{
+  margin-top: 20px;
+  padding: 0 60% 0 0;
+  text-align: justify;
+}
+
+
+.work-gallery{
+  padding: 30px;
+}
+
+.work-gallery h2{
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.work-items{
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.work-items li{
+  width: 33.333333%;
+  height: 230px;
+}
+
+.work-items li a{
+  width: 100%;
+  position: relative;
+  outline: 1px solid #fff;
+  opacity: 0.6;
+  display: block;
+}
+.item-wrapper{
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2; 
+  color: #fff;
+}
+
+
+.work-items li a .item-wrapper p{
+  font-size: 16px;
+  transform: scale(0);
+  position: absolute;
+  width: 100%;
+  text-align: justify;
+  left: 50%;
+}
+
+.work-items li a .item-wrapper p:nth-child(2){
+  top:30%;
+}
+.work-items li a .item-wrapper p:nth-child(3){
+  top:60%;
+}
+.work-items li a .item-wrapper p:nth-child(4){
+  top:90%;
+}
+
+/* .work-items li a .item-wrapper p:nth-child(1){
+  top:60%;
+}
+.work-items li a .item-wrapper p:nth-child(2){
+  top:80%;
+  border: 1px solid red;
+} */
+
+.work-items li a .item-wrapper h3{
+  color: #fff;
+  opacity: 1;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.work-items li a:hover .item-wrapper p{
+  transition: all .2s;
+  transform: scale(1);
+  transform: translate(-50%,-20%);
+}
+
+.work-items li a:hover .item-wrapper h3{
+  transition: all .2s;
+  transform: translate(-60px,-100px);
+}
+
+.work-items li a:hover{
+  transition: all .2s;
+  opacity: 1;
+}
+
+.work-items li a:hover::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+}
+
+.work-items li:nth-child(1) a:hover::before{
+  background-color: rgba(20, 181, 209, 0.486);
+}
+.work-items li:nth-child(2) a:hover::before{
+  background-color: rgba(224, 62, 62, 0.74);
+}
+.work-items li:nth-child(3) a:hover::before{
+  background-color: rgba(20, 11, 89, 0.486);
+}
+.work-items li:nth-child(4) a:hover::before{
+  background-color: rgba(17, 240, 240, 0.87);
+}
+.work-items li:nth-child(5) a:hover::before{
+  background-color: rgba(255, 255, 0, 0.719);
+}
+.work-items li:nth-child(6) a:hover::before{
+  background-color: rgba(118, 71, 226, 0.788);
+}
+
+
+.work-items li a img{
+  width: 100%;
+  height: 230px;
+  vertical-align: top;
+}
+
+.skill h2{
+  background-color: #eee;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 30px;
+}
+
+.skillWrapper{
+  display: flex;
+  background-color: #eee;
+  color: #666;
+}
+
+.skillPoint,.advantages{
+  width: 50%;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.skillPoint li,.advantages li{
+  position: relative;
+}
+
+.skillPoint li::before,.advantages li::before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #666;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.skillPoint p,.advantages p{
+  text-indent: 16px;
+  text-align: justify;
+}
+
+.skillPoint h3,.advantages h3{
+  color: #000;
+}
+
+.concat{
+  min-height: 100vh;
+  min-width: 80vw;
+  padding: 40px;
+}
+
+.concat .Qr-code {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  padding-bottom: 30px;
+}
+
+.concat .Qr-code figure{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.concat .Qr-code figure img{
+  width: 200px;
+  height: 200px;
+}
+
+.concat .send-email{
+  margin-top: 10px;
+}
+
+.send-email h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.send-email .username input,
+.send-email .email input{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #666666;
+  background: #fff;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+
+.email-content textarea{
+  width: 100%;
+  height: 60px;
+}
+
+input[type="submit"]{
+  margin-top: 16px;
+  color: #FFF;
+  border:1px solid #333;
+  vertical-align: middle;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2em;
+  background-color: #333;
+  border-radius: 4px;
+}
