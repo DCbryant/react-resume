@@ -43,7 +43,7 @@ class App extends Component {
                   <div className="copyright">&copy; dcbryant 2017</div>
                   </div>            
                 <div className="content"> 
-                  {<Route exact path="/" component={SelfIntro}/>}
+                  <Route exact path="/" component={SelfIntro}/>
                   <Route path="/works" component={WorkGallery}/>
                   <Route path="/skill" component={Skill}/>
                   <Route path="/contact" component={Contact}/>
