@@ -5,16 +5,10 @@ import WorkGallery from './WorkGallery'
 import Skill from './Skill'
 import Contact from './Contact'
 import {
-  Router,
+  BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
-
-
-import createHistory from 'history/createBrowserHistory'
-const history = createHistory()
-
-
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">       
-          <Router history = {history}>         
+          <Router>         
               <div className="contentBox">
                   <div className="sidebar">
                     <img className="avater" src="https://i.loli.net/2017/10/08/59da09d347561.jpg" alt="avater" />
