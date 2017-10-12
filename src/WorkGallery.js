@@ -47,7 +47,7 @@ export default class WorkGallery extends Component{
                         <div className="item-wrapper">
                             <h3>面向对象组件</h3>
                             <p>功能介绍：使用面向对象思想，实现了常见页面效果，包括drag、carousel、tab、music等等8个组件</p>
-                            <p>技术细节：每个组件都是先实现其基本功能，然后用面向对象的方法封装</p>
+                            <p>技术细节：每个组件都是先实现其基本功能，然后用面向对象的思想封装</p>
                             <p>使用技能：面向对象 js jquery</p> 
                         </div> 
                     </a></li>
